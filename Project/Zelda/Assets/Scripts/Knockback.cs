@@ -41,6 +41,7 @@ public class Knockback : MonoBehaviour
                 else if (collision.gameObject.CompareTag("Player") && collision.isTrigger)
                 {
                     collision.GetComponent<PlayerMovement>().Knock(knockTime);
+                    collision.gameObject.GetComponent<PlayerHealth>().TakeHit(1);
                 }
             }
         }
