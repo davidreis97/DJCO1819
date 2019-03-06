@@ -10,6 +10,7 @@ public class Fireball : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
     }
 
     // Update is called once per frame
@@ -20,6 +21,11 @@ public class Fireball : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
+    {
+        GetComponent<Animator>().Play("Explode");
+    }
+
+    private void ShutDown()
     {
         gameObject.SetActive(false);
     }

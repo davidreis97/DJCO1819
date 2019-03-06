@@ -16,12 +16,12 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - HLC
+  - APR
+  - Log
+  - StaticColliders
+  - Bullets
   - 
   - 
   - 

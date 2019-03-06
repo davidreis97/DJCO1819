@@ -12356,7 +12356,7 @@ GameObject:
   - component: {fileID: 1339550785}
   - component: {fileID: 1339550784}
   - component: {fileID: 1339550783}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Collision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17864,11 +17864,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HLC
       objectReference: {fileID: 0}
-    - target: {fileID: 2059531661660145513, guid: 677cd44a23a2849c7bcabed0585ddb99,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
     - target: {fileID: 3448456263556623584, guid: 677cd44a23a2849c7bcabed0585ddb99,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17924,67 +17919,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3448456263556623584, guid: 677cd44a23a2849c7bcabed0585ddb99,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 3448456263556623584, guid: 677cd44a23a2849c7bcabed0585ddb99,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.06
-      objectReference: {fileID: 0}
+    - target: {fileID: 1442150881, guid: 677cd44a23a2849c7bcabed0585ddb99, type: 3}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 2109195181}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 677cd44a23a2849c7bcabed0585ddb99, type: 3}
---- !u!1 &1442150877 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2059531661660145513, guid: 677cd44a23a2849c7bcabed0585ddb99,
-    type: 3}
-  m_PrefabInstance: {fileID: 1424627468}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1442150881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1442150877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a297325daccc94cee95792431e619230, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Target: {fileID: 2109195181}
-  Bullet: {fileID: 3415248375615764322, guid: 9cfb027a23ff5414587f1bc3f1b394b3, type: 3}
-  speed: 0.03
-  minDistance: 5
-  shootingTimeout: 200
---- !u!61 &1442150883
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1442150877}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 0933c1cc8de1d344dadcf991be161b56, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 16, y: 16}
-    newSize: {x: 15, y: 16}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 16, y: 16}
-  m_EdgeRadius: 0
 --- !u!1 &1554495435
 GameObject:
   m_ObjectHideFlags: 0
@@ -18076,7 +18016,7 @@ GameObject:
   - component: {fileID: 1690952077}
   - component: {fileID: 1690952081}
   - component: {fileID: 1690952080}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Pot
   m_TagString: breakable
   m_Icon: {fileID: 0}
@@ -18218,7 +18158,7 @@ GameObject:
   - component: {fileID: 1695083609}
   - component: {fileID: 1695083610}
   - component: {fileID: 1695083611}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Log
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -18510,7 +18450,7 @@ GameObject:
   - component: {fileID: 2109195187}
   - component: {fileID: 2109195188}
   - component: {fileID: 2109195189}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -18816,6 +18756,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sign
+      objectReference: {fileID: 0}
+    - target: {fileID: 6152622799004820617, guid: a1ff00f8587f8b54e846e3a86d3ac9ca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1951042713822685971, guid: a1ff00f8587f8b54e846e3a86d3ac9ca,
         type: 3}
