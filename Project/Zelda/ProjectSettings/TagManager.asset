@@ -50,3 +50,9 @@ TagManager:
   - name: player
     uniqueID: 4117118405
     locked: 0
+  - name: office1-1
+    uniqueID: 4091731479
+    locked: 0
+  - name: office1-2
+    uniqueID: 162970053
+    locked: 0
