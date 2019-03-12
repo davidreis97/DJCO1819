@@ -2,5 +2,10 @@
 Desenvolvimento de Jogos de Computador / Computer Games Development
 
 ## TODO
-- [ ] Mapa, Assets
-- [ ] ...
+- [ ] Falas Iniciais (Claudia Catarina)
+- [ ] Apanhar Chave que Abre Portas (Claudia Catarina)
+- [ ] Mapa (David Falcao)
+- [ ] Inimigos (David Reis)
+- [ ] Menu (David Reis)
+
+ 
