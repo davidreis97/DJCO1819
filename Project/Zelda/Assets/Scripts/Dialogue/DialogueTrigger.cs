@@ -24,7 +24,6 @@ public class DialogueTrigger : Interactable
         }
         if (Input.GetKeyDown(KeyCode.Space))   
         {
-            Debug.Log(dialogueManager.isOpen);
             if (! dialogueManager.isOpen)
             {
                 dialogueManager.StartDialogue(dialogue);
@@ -35,7 +34,9 @@ public class DialogueTrigger : Interactable
                 dialogueManager.DisplayNextSentence();
              
             }
-        } else if (dialogueManager.isOpen)
+        }
+
+        if (dialogueManager.isOpen)
         {
             contextClue.SetActive(false);
         }

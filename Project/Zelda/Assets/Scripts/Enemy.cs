@@ -19,6 +19,9 @@ public class Enemy : MonoBehaviour
     //speed
     public float moveSpeed = 1;
 
+    // has key
+    public bool hasKey = false;
+
     //health
     public FloatValue maxHealth;
     public float health;
@@ -26,8 +29,13 @@ public class Enemy : MonoBehaviour
     //reference to death effect
     public GameObject deathEffect;
 
-    //reference to heart object
-    public GameObject heart;
+
+    // Pickable objects
+
+    public GameObject heart;    //reference to heart object
+    public GameObject key;      //reference to key object
+
+
 
     //does not override start in the log class
     private void Awake()
@@ -76,7 +84,16 @@ public class Enemy : MonoBehaviour
     /* Creates powerups */
     void MakePowerUp()
     {
-        int random = Random.Range(0, 3);
+        if (hasKey)
+        {
+            if (key != null)
+            {
+                Instantiate(key, transform.position, Quaternion.identity);
+            }
+            return;
+        }
+
+        int random = Random.Range(0, 3);    //TODO outras cenas
 
         switch (random)
         {

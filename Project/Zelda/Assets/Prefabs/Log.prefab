@@ -164,15 +164,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
+  moveSpeed: 1.5
   maxHealth: {fileID: 11400000, guid: 13ffd6122c1b12843a4e362fc4c26423, type: 2}
   health: 2
-  enemyName: Larry the Log
-  baseAttack: 1
-  moveSpeed: 1.5
+  deathEffect: {fileID: 0}
+  heart: {fileID: 0}
   target: {fileID: 0}
   chaseRadius: 4
   attackRadius: 1.4
-  homePosition: {fileID: 0}
+  myRigidbody: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &5622316541079014925
 BoxCollider2D:

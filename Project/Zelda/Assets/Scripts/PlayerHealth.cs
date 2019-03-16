@@ -9,6 +9,9 @@ public class PlayerHealth : MonoBehaviour
     public GameObject heartPrefab;
     public GameObject heartContainer;
 
+    // player has key
+    public bool playerHasKey = false;
+
     // Start is called before the first frame update
     void Start()
     {

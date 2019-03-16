@@ -47,7 +47,7 @@ public class Knockback : MonoBehaviour
         }
         else
         {
-            Debug.Log("Something else");
+            Debug.Log("Something else"+ collision);
         }
     }
  
