@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth;
     public GameObject heartPrefab;
     public GameObject heartContainer;
+    public GameObject key;
 
     // player has key
     public bool playerHasKey = false;
@@ -25,6 +26,12 @@ public class PlayerHealth : MonoBehaviour
             heart.GetComponent<Heart>().SetFull();
             heart.transform.localScale = new Vector3(42, 42, 1);
         }
+    }
+
+    public void PlayerHasKey()
+    {
+        playerHasKey = true;
+        key.SetActive(true);
     }
 
     // Update is called once per frame

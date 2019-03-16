@@ -28,7 +28,7 @@ public class Powerup : MonoBehaviour
                     collision.GetComponent<PlayerHealth>().HealUp(1);
                     break;
                 case Type.key:
-                    GameObject.FindWithTag("Player").GetComponent<PlayerHealth>().playerHasKey = true;
+                    GameObject.FindWithTag("Player").GetComponent<PlayerHealth>().PlayerHasKey();
                     break;
                 default:
                     break;
