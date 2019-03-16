@@ -8,6 +8,8 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth;
     public GameObject heartPrefab;
     public GameObject heartContainer;
+
+    public GameObject nokey;
     public GameObject key;
 
     // player has key
@@ -31,6 +33,7 @@ public class PlayerHealth : MonoBehaviour
     public void PlayerHasKey()
     {
         playerHasKey = true;
+        nokey.SetActive(false);
         key.SetActive(true);
     }
 

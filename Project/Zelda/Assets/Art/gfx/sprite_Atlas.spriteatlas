@@ -42,7 +42,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 4c5e649e94b67f44b8d717bc3ca4da69, type: 3}
-    totalSpriteSurfaceArea: 1198455
+    totalSpriteSurfaceArea: 1208967
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -244,6 +244,7 @@ SpriteAtlas:
   - {fileID: 21300040, guid: 761d62a2bd7525e42975cbace992426b, type: 3}
   - {fileID: 21300042, guid: 761d62a2bd7525e42975cbace992426b, type: 3}
   - {fileID: 21300044, guid: 761d62a2bd7525e42975cbace992426b, type: 3}
+  - {fileID: 21300000, guid: 8cdc0043a4e07394d8cb8e8ea33d7278, type: 3}
   - {fileID: 21300000, guid: 1f732424e6ebc45e086106dd3c63b88e, type: 3}
   - {fileID: 21300000, guid: 47fce7740c1bca5449b533686766af6c, type: 3}
   - {fileID: 21300028, guid: 0269bb759ae4a9e4888eed042a9ca15f, type: 3}
@@ -485,6 +486,7 @@ SpriteAtlas:
   - {fileID: 21300002, guid: 755c8e2979177ac4da5a299561c8e9ed, type: 3}
   - {fileID: 21300004, guid: 755c8e2979177ac4da5a299561c8e9ed, type: 3}
   - {fileID: 21300006, guid: 755c8e2979177ac4da5a299561c8e9ed, type: 3}
+  - {fileID: 21300000, guid: 68da6d7ab1fe0b64fbb10721526bdd6b, type: 3}
   - {fileID: 21300004, guid: 9d32df5c2a8a242fc9c1be7cf300112c, type: 3}
   - {fileID: 21300006, guid: 9d32df5c2a8a242fc9c1be7cf300112c, type: 3}
   - {fileID: 21300000, guid: 9d32df5c2a8a242fc9c1be7cf300112c, type: 3}
@@ -495,6 +497,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 75f9657cca518460796d6b525adf9cec, type: 3}
   - {fileID: 21300006, guid: 75f9657cca518460796d6b525adf9cec, type: 3}
   - {fileID: 21300004, guid: 75f9657cca518460796d6b525adf9cec, type: 3}
+  - {fileID: 21300000, guid: a1e55c8c047a1814b81bef3489953c55, type: 3}
   - {fileID: 21301654, guid: 9f7f737ee3175764b8968bf47e683608, type: 3}
   - {fileID: 21301674, guid: 9f7f737ee3175764b8968bf47e683608, type: 3}
   - {fileID: 21301694, guid: 9f7f737ee3175764b8968bf47e683608, type: 3}
@@ -1856,6 +1859,7 @@ SpriteAtlas:
   - log_20
   - log_21
   - log_22
+  - key2
   - key
   - objects 1
   - character_14
@@ -2097,6 +2101,7 @@ SpriteAtlas:
   - modified gfx melee sprites_1
   - modified gfx melee sprites_2
   - modified gfx melee sprites_3
+  - pixil-frame-0 (2)
   - explosion_1
   - explosion_0
   - explosion_3
@@ -2107,6 +2112,7 @@ SpriteAtlas:
   - fireball_0
   - fireball_3
   - fireball_2
+  - key (1)
   - Overworld_827
   - Overworld_837
   - Overworld_847
