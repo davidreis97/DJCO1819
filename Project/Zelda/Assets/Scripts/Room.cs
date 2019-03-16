@@ -7,13 +7,15 @@ public class Room : MonoBehaviour
     // text cenas
     public bool needText;
     public string placeName;
+
     public GameObject text;
     public Text placeText;
-
+ 
     public GameObject virtualCamera;    // camera
-
+ 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+ 
         if (collision.CompareTag("Player") && !collision.isTrigger) //player foot
         {
             virtualCamera.SetActive(true);  // set camera
@@ -21,7 +23,7 @@ public class Room : MonoBehaviour
             if (needText)
             {
                 StartCoroutine(PlaceNameCo());
-            }
+            } 
         }
     }
 
@@ -42,5 +44,6 @@ public class Room : MonoBehaviour
         yield return new WaitForSeconds(4f);   // wait 4 seconds before disabling the text again
         text.SetActive(false);
     }
+ 
 }
 

@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D myRigidbody;
     private Vector3 change;
     private Animator animator;
+    public bool canMove = false;
 
     public PlayerState currentState;
 
@@ -36,6 +37,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!canMove)
+        {
+            return;
+        }
+
         change = Vector3.zero;
         change.x = Input.GetAxisRaw("Horizontal");  // GetAxis
         change.y = Input.GetAxisRaw("Vertical");    // dows not interpolate the values - no accelaration

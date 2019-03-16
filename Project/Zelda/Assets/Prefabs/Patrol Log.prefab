@@ -165,11 +165,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   moveSpeed: 1
+  hasKey: 0
   maxHealth: {fileID: 11400000, guid: 13ffd6122c1b12843a4e362fc4c26423, type: 2}
   health: 3
   deathEffect: {fileID: 8873529936727280663, guid: e136bff6ece8321449188648fd1de798,
     type: 3}
-  heart: {fileID: 8793434117977645960, guid: 3edd085e3d5c1b2468401ecb95cbe3ed, type: 3}
+  powerUps:
+  - {fileID: 8793434117977645960, guid: 3edd085e3d5c1b2468401ecb95cbe3ed, type: 3}
+  - {fileID: 4858868799956053036, guid: 53fd7d4d088a3df4d88ee9bdea182943, type: 3}
+  - {fileID: 8159547268950445080, guid: 840f09034adc981419fd03d0f9a99623, type: 3}
+  key: {fileID: 0}
   target: {fileID: 0}
   chaseRadius: 3
   attackRadius: 1

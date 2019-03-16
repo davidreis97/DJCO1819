@@ -32,8 +32,8 @@ public class Enemy : MonoBehaviour
 
     // Pickable objects
 
-    public GameObject heart;    //reference to heart object
-    public GameObject key;      //reference to key object
+    public GameObject[] powerUps;    //reference to powerups object
+    public GameObject key;           //reference to key object
 
 
 
@@ -90,21 +90,12 @@ public class Enemy : MonoBehaviour
             {
                 Instantiate(key, transform.position, Quaternion.identity);
             }
-            return;
+            return; 
         }
 
-        int random = Random.Range(0, 3);    //TODO outras cenas
+        int random = Random.Range(0, powerUps.Length-1);
 
-        switch (random)
-        {
-
-            default: // heart
-
-                if (heart != null)
-                {
-                    Instantiate(heart, transform.position, Quaternion.identity);
-                }
-                break;
-        }
+        Instantiate(powerUps[random], transform.position, Quaternion.identity);
+ 
     }
 }
