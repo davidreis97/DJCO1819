@@ -23,7 +23,7 @@ TextureImporter:
     21300036: 0x72_DungeonTilesetII_v1.2_18
     21300038: 0x72_DungeonTilesetII_v1.2_19
     21300040: 0x72_DungeonTilesetII_v1.2_20
-    21300042: 0x72_DungeonTilesetII_v1.2_21
+    21300042: APR_0
     21300044: 0x72_DungeonTilesetII_v1.2_22
     21300046: 0x72_DungeonTilesetII_v1.2_23
     21300048: 0x72_DungeonTilesetII_v1.2_24
@@ -37,9 +37,9 @@ TextureImporter:
     21300064: 0x72_DungeonTilesetII_v1.2_32
     21300066: 0x72_DungeonTilesetII_v1.2_33
     21300068: 0x72_DungeonTilesetII_v1.2_34
-    21300070: 0x72_DungeonTilesetII_v1.2_35
-    21300072: 0x72_DungeonTilesetII_v1.2_36
-    21300074: 0x72_DungeonTilesetII_v1.2_37
+    21300070: APR_1
+    21300072: APR_2
+    21300074: APR_3
     21300076: 0x72_DungeonTilesetII_v1.2_38
     21300078: 0x72_DungeonTilesetII_v1.2_39
     21300080: 0x72_DungeonTilesetII_v1.2_40
@@ -391,9 +391,9 @@ TextureImporter:
       name: character_idle_0
       rect:
         serializedVersion: 2
-        x: 1280
+        x: 1275
         y: 4800
-        width: 150
+        width: 160
         height: 180
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -411,7 +411,7 @@ TextureImporter:
       name: character_idle_1
       rect:
         serializedVersion: 2
-        x: 1440
+        x: 1435
         y: 4800
         width: 160
         height: 180
@@ -431,7 +431,7 @@ TextureImporter:
       name: character_idle_2
       rect:
         serializedVersion: 2
-        x: 1600
+        x: 1595
         y: 4800
         width: 160
         height: 180
@@ -788,13 +788,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.2_21
+      name: APR_0
       rect:
         serializedVersion: 2
-        x: 129
-        y: 448
-        width: 15
-        height: 19
+        x: 1285
+        y: 4485
+        width: 150
+        height: 190
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1068,13 +1068,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.2_35
+      name: APR_1
       rect:
         serializedVersion: 2
-        x: 145
-        y: 448
-        width: 15
-        height: 18
+        x: 1444
+        y: 4485
+        width: 150
+        height: 191
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1088,13 +1088,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.2_36
+      name: APR_2
       rect:
         serializedVersion: 2
-        x: 161
-        y: 448
-        width: 15
-        height: 17
+        x: 1605
+        y: 4484
+        width: 150
+        height: 191
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1108,13 +1108,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.2_37
+      name: APR_3
       rect:
         serializedVersion: 2
-        x: 177
-        y: 448
-        width: 15
-        height: 18
+        x: 1765
+        y: 4483
+        width: 150
+        height: 192
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5531,7 +5531,7 @@ TextureImporter:
       name: character_idle_3
       rect:
         serializedVersion: 2
-        x: 1760
+        x: 1755
         y: 4800
         width: 160
         height: 180

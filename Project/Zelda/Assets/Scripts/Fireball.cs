@@ -16,7 +16,10 @@ public class Fireball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.up = Target.transform.position - transform.position;
+        if (this.Target)
+        {
+            transform.up = Target.transform.position - transform.position;
+        }
         transform.position += transform.up * speed;
     }
 

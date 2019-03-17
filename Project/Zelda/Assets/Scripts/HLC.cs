@@ -7,10 +7,13 @@ public class HLC : MonoBehaviour
     public GameObject Target;
     public GameObject Bullet;
     public float speed;
+    public float bulletSpeed;
     public float minDistance;
     public float shootingTimeout;
+    public bool bulletFollowPlayer;
     private float currShootingTimeout;
     private SpriteRenderer sr;
+
 
     // Start is called before the first frame update
     void Start()
@@ -44,7 +47,11 @@ public class HLC : MonoBehaviour
             currShootingTimeout = shootingTimeout;
             GameObject bullet = Instantiate(Bullet);
             bullet.transform.position = transform.position;
-            bullet.GetComponent<Fireball>().Target = Target;
+            bullet.GetComponent<Fireball>().speed = bulletSpeed;
+            if (bulletFollowPlayer)
+            {
+                bullet.GetComponent<Fireball>().Target = Target;
+            }
         }
     }
 
