@@ -10,7 +10,7 @@ public class Fireball : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        transform.up = Target.transform.position - transform.position;
     }
 
     // Update is called once per frame

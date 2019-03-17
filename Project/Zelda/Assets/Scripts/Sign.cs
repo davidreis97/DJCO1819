@@ -4,20 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class Sign : MonoBehaviour
+public class Sign : Interactable
 {
     //Dialog box
     public GameObject dialogBox;
     public Text dialogText;
     public string dialog;
-    public bool playerInRange;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -28,31 +21,29 @@ public class Sign : MonoBehaviour
             if (dialogBox.activeInHierarchy)
             {
                 dialogBox.SetActive(false);
+                contextClue.SetActive(true);    // active context clue
+
             }
             else
             {
                 dialogBox.SetActive(true);
                 dialogText.text = dialog;
+                contextClue.SetActive(false);
+
             }
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player")) {
-
-            //Debug.Log("Player in range");
-            playerInRange = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && !collision.isTrigger)
         {
-            //Debug.Log("Player left range");
             playerInRange = false;
-            dialogBox.SetActive(false);
+            dialogBox.SetActive(false);     // desactivate context clue
+
+            contextClue.SetActive(false);
         }
     }
+
+
 }
