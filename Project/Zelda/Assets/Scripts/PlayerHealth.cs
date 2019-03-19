@@ -59,7 +59,10 @@ public class PlayerHealth : MonoBehaviour
 
     public void HealUp(int hearts)
     {
-        currentHealth += hearts;
-        UpdateHearts();
+        if(currentHealth < maxHealth)
+        {
+            currentHealth += hearts;
+            UpdateHearts();
+        }
     }
 }
