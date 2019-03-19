@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -55,6 +56,10 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth -= hearts;
         UpdateHearts();
+        if(currentHealth == 0)
+        {
+            SceneManager.LoadScene("GameOver"); // Create Game Over Menu
+        }
     }
 
     public void HealUp(int hearts)
