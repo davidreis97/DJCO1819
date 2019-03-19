@@ -26,7 +26,7 @@ public class HLC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+ 
         Vector3 vec = Target.transform.position - transform.position;
 
         if (vec.x < 0)
@@ -59,8 +59,15 @@ public class HLC : MonoBehaviour
         health -= hit;
         if(health <= 0)
         {
-            //TODO - Animacao
-            gameObject.SetActive(false);
+            if (gameObject.name.Equals("Souto"))
+            {
+                this.enabled = false;
+                GetComponent<HistoryTrigger>().enabled = true;
+            }
+            else
+            {
+                gameObject.SetActive(false);
+            }
         }
     }
 }
