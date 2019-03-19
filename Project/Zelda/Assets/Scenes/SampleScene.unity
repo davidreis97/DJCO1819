@@ -15270,16 +15270,16 @@ RectTransform:
   m_GameObject: {fileID: 822610644}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 40, y: 40, z: 1}
+  m_LocalScale: {x: 55, y: 55, z: 1}
   m_Children:
   - {fileID: 1455146014}
   - {fileID: 1249621134}
   m_Father: {fileID: 601788681}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -350, y: 135}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 55, y: -105}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &822610646
@@ -15320,7 +15320,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 68da6d7ab1fe0b64fbb10721526bdd6b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.59607846}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5529412}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15872,9 +15872,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 1f732424e6ebc45e086106dd3c63b88e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.65882355}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -27642,7 +27642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1442150878, guid: 1daaa55aea43842c1960d0eed6564acb, type: 3}
       propertyPath: bulletSpeed
-      value: 0.045
+      value: 0.035
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1daaa55aea43842c1960d0eed6564acb, type: 3}
@@ -27806,9 +27806,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: a1e55c8c047a1814b81bef3489953c55, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.7411765}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -28548,11 +28548,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 79684445, guid: 504cc879349de4746aa283fa94bb2fda, type: 3}
       propertyPath: bulletSpeed
-      value: 0.18
+      value: 0.12
       objectReference: {fileID: 0}
     - target: {fileID: 79684445, guid: 504cc879349de4746aa283fa94bb2fda, type: 3}
       propertyPath: bulletFollowPlayer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 79684445, guid: 504cc879349de4746aa283fa94bb2fda, type: 3}
+      propertyPath: minDistance
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 504cc879349de4746aa283fa94bb2fda, type: 3}
@@ -29029,6 +29033,16 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 2572006060773170274, guid: 71ce83c997e1d4fa592ea9c256619dde,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2572006060773170274, guid: 71ce83c997e1d4fa592ea9c256619dde,
+        type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71ce83c997e1d4fa592ea9c256619dde, type: 3}
 --- !u!1001 &3796722244741291193
