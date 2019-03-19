@@ -9,6 +9,10 @@ public class PlayerHealth : MonoBehaviour
     public GameObject heartPrefab;
     public GameObject heartContainer;
 
+    public GameObject nokey;
+    public GameObject key;
+    public bool playerHasKey = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,10 +28,11 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PlayerHasKey()
     {
-
+        playerHasKey = true;
+        nokey.SetActive(false);
+        key.SetActive(true);
     }
 
     void UpdateHearts()

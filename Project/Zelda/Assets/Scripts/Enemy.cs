@@ -25,9 +25,14 @@ public class Enemy : MonoBehaviour
 
     //reference to death effect
     public GameObject deathEffect;
+    
+    //key
+    public bool hasKey = false;
 
-    //reference to heart object
-    public GameObject heart;
+    //pickable objects
+    public GameObject[] powerUps;   //reference to powerups object
+    public GameObject key;          //reference to key object
+
 
     //does not override start in the log class
     private void Awake()
@@ -60,7 +65,6 @@ public class Enemy : MonoBehaviour
 
          // updatestate
          currentState = EnemyState.idle;
-
     }
 
     /* Creates an animation for the enemy death */
@@ -76,18 +80,18 @@ public class Enemy : MonoBehaviour
     /* Creates powerups */
     void MakePowerUp()
     {
-        int random = Random.Range(0, 3);
-
-        switch (random)
+        if (hasKey)
         {
-
-            default: // heart
-
-                if (heart != null)
-                {
-                    Instantiate(heart, transform.position, Quaternion.identity);
-                }
-                break;
+            if (key != null)
+            {
+                Instantiate(key, transform.position, Quaternion.identity);
+            }
+            return;
         }
+
+        int random = Random.Range(0, powerUps.Length - 1);
+
+        Instantiate(powerUps[random], transform.position, Quaternion.identity);
+
     }
 }

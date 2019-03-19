@@ -20,6 +20,11 @@ public class Knockback : MonoBehaviour
         /* Enemy or Player */
         else if (collision.gameObject.CompareTag("enemy") || collision.gameObject.CompareTag("Player"))
         {
+            if (this.gameObject.CompareTag(collision.gameObject.tag))
+            {
+                return;
+            }
+
             Rigidbody2D hit = collision.GetComponent<Rigidbody2D>();
             if (hit != null)
             {
