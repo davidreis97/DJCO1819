@@ -58,7 +58,7 @@ public class PlayerHealth : MonoBehaviour
         UpdateHearts();
         if(currentHealth == 0)
         {
-            SceneManager.LoadScene("MainMenu"); // Create Game Over Menu
+            SceneManager.LoadScene("GameOver"); // Create Game Over Menu
         }
     }
 
