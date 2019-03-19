@@ -470,8 +470,10 @@ MonoBehaviour:
   contextClue: {fileID: 445773908}
   dialogue:
     sentences:
-    - aaaaaaaa
-    - bbbbbbbb
+    - "N\xE3o Carlos, j\xE1 te disse que n\xE3o podes mudar de turma a DJCO!!!!!"
+    - "Ah, andas \xE0 procura do Souto?"
+    - "O gabinete dele \xE9 \xE0 direita, mas est\xE1 fechado..."
+    - "Quem tem a chave \xE9 o HLC, ele est\xE1 no gabinete dele, \xE0 esquerda."
     name: D.Lina
   dialogueManager: {fileID: 702018493}
 --- !u!61 &148057946
@@ -27587,6 +27589,18 @@ PrefabInstance:
       propertyPath: Target
       value: 
       objectReference: {fileID: 2109195181}
+    - target: {fileID: 1442150878, guid: 1daaa55aea43842c1960d0eed6564acb, type: 3}
+      propertyPath: health
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442150878, guid: 1daaa55aea43842c1960d0eed6564acb, type: 3}
+      propertyPath: shootingTimeout
+      value: 130
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442150878, guid: 1daaa55aea43842c1960d0eed6564acb, type: 3}
+      propertyPath: bulletSpeed
+      value: 0.045
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1daaa55aea43842c1960d0eed6564acb, type: 3}
 --- !u!1 &1432922085
@@ -27839,10 +27853,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - aaaaa
-    - bbbbbb
-    - cccc
-    name: Nome?
+    - Fogo, 7.8 a LCOM...
+    - Vou ter de ir ao gabinete do Souto ver se ele me sobe a nota.
+    - "Mas onde \xE9 o gabinete? Talvez a D.Lina saiba, ela deve estar mais acima."
+    - Mas primeiro tenho de passar pelos gajos da Blip...
+    name: Carlos
   dialogueManager: {fileID: 702018493}
   playerM: {fileID: 2109195185}
 --- !u!1001 &1676452659
@@ -28465,6 +28480,18 @@ PrefabInstance:
       propertyPath: Target
       value: 
       objectReference: {fileID: 2109195181}
+    - target: {fileID: 79684445, guid: 504cc879349de4746aa283fa94bb2fda, type: 3}
+      propertyPath: health
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 79684445, guid: 504cc879349de4746aa283fa94bb2fda, type: 3}
+      propertyPath: bulletSpeed
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 79684445, guid: 504cc879349de4746aa283fa94bb2fda, type: 3}
+      propertyPath: bulletFollowPlayer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 504cc879349de4746aa283fa94bb2fda, type: 3}
 --- !u!1001 &1991929439

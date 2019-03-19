@@ -5,6 +5,7 @@ using UnityEngine;
 public class Fireball : MonoBehaviour
 {
     public GameObject Target;
+    public bool followTarget;
     public float speed;
 
     // Start is called before the first frame update
@@ -16,7 +17,7 @@ public class Fireball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (this.Target)
+        if (followTarget)
         {
             transform.up = Target.transform.position - transform.position;
         }
@@ -26,6 +27,7 @@ public class Fireball : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         GetComponent<Animator>().Play("Explode");
+        Debug.Log(collision);
     }
 
     private void ShutDown()

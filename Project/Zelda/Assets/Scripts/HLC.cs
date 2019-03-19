@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,7 +14,7 @@ public class HLC : MonoBehaviour
     public bool bulletFollowPlayer;
     private float currShootingTimeout;
     private SpriteRenderer sr;
-
+    public int health;
 
     // Start is called before the first frame update
     void Start()
@@ -48,12 +49,18 @@ public class HLC : MonoBehaviour
             GameObject bullet = Instantiate(Bullet);
             bullet.transform.position = transform.position;
             bullet.GetComponent<Fireball>().speed = bulletSpeed;
-            if (bulletFollowPlayer)
-            {
-                bullet.GetComponent<Fireball>().Target = Target;
-            }
+            bullet.GetComponent<Fireball>().Target = Target;
+            bullet.GetComponent<Fireball>().followTarget = bulletFollowPlayer;
         }
     }
 
-
+    public void TakeHit(int hit)
+    {
+        health -= hit;
+        if(health <= 0)
+        {
+            //TODO - Animacao
+            gameObject.SetActive(false);
+        }
+    }
 }

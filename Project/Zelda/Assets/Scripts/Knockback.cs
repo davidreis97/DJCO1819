@@ -42,6 +42,11 @@ public class Knockback : MonoBehaviour
                     collision.GetComponent<Enemy>().Knock(hit, knockTime, damage);          
                 }
 
+                if (collision.gameObject.name == "Souto" || collision.gameObject.name == "APR")
+                {
+                    collision.gameObject.GetComponent<HLC>().TakeHit(1);
+                }
+
                 // player
                 else if (collision.gameObject.CompareTag("Player") && collision.isTrigger)
                 {
