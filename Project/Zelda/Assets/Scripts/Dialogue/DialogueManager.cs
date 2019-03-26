@@ -17,7 +17,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject dialogueImage;
 
     //keep track of sentences
-    private Queue<string> sentences;
+    public Queue<string> sentences;
 
     public bool isOpen = false;
 
@@ -56,6 +56,8 @@ public class DialogueManager : MonoBehaviour
    
     public void DisplayNextSentence()
     {
+   
+
         if (sentences.Count == 0)
         {
             EndDialogue();
@@ -70,7 +72,7 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(TypeSentence(sentence));
     }
 
-    IEnumerator TypeSentence(string sentence)
+    public IEnumerator TypeSentence(string sentence)
     {
         dialogueText.text = "";
 
@@ -87,6 +89,7 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
+
         animator.SetBool("isOpen", false);
         isOpen = false;
     }

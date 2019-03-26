@@ -18,7 +18,7 @@ public class Knockback : MonoBehaviour
         }
 
         /* Enemy or Player */
-        else if (collision.gameObject.CompareTag("enemy") || collision.gameObject.CompareTag("Player"))
+        else if (collision.gameObject.CompareTag("enemy") || collision.gameObject.CompareTag("Player") && collision.isTrigger)
         {
             if (this.gameObject.CompareTag(collision.gameObject.tag))
             {

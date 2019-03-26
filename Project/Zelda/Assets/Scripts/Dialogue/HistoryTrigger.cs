@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -10,6 +11,7 @@ public class HistoryTrigger : MonoBehaviour
     public DialogueManager dialogueManager;
     private bool aux = false;
     public PlayerMovement playerM;
+    public bool triggerWin = false;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +29,10 @@ public class HistoryTrigger : MonoBehaviour
 
         if (aux && !dialogueManager.isOpen)
         {
+            if (triggerWin)
+            {
+                SceneManager.LoadScene("Win");
+            }
             StartCoroutine(DeleteCo());
             
         } 

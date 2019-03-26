@@ -26,6 +26,8 @@ public class Fireball : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //Debug.Break();
+        GetComponent<BoxCollider2D>().enabled = false;
         GetComponent<Animator>().Play("Explode");
         Debug.Log(collision);
     }
